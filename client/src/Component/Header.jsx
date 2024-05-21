@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, TextInput, Button, NavbarToggle } from "flowbite-react";
+import { Navbar, TextInput, Button, NavbarToggle} from "flowbite-react";
 import { Link, useLocation } from 'react-router-dom';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaMoon } from 'react-icons/fa';
@@ -17,15 +17,15 @@ const Header = () => {
       <form>
         <TextInput className='hidden lg:inline' type='text' placeholder='search....' rightIcon={AiOutlineSearch} />
       </form>
-      <Button className='w-12 h-10 hidden sm:flex items-center justify-center rounded-full text-black lg:hidden'>
+      <Button className='w-12 h-10 hidden sm:flex' color='gray' pill>
         <AiOutlineSearch />
       </Button>
       <div className='flex gap-2 md:order-2'>
-        <Button className='w-12 h-10 hidden sm:flex items-center justify-center rounded-full bg-gray-200 text-teal-500'>
+        <Button className='w-12 h-10 hidden sm:flex' color='gray' pill>
           <FaMoon />
         </Button>
         <Link to='/sign-in'>
-          <Button className='w-12 h-10 hidden sm:flex items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white text-nowrap px-10'>
+          <Button gradientDuoTone='purpleToBlue' outline>
             Sign In
           </Button>
         </Link>

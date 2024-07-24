@@ -66,7 +66,7 @@ try {
             <Label value='your name'/>
             <TextInput 
             type='text'
-            placeholder='U8sername'
+            placeholder='Username'
             id='username'
             onChange={handleChange}
             />

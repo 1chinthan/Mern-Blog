@@ -14,7 +14,10 @@ const userSchema=new mongoose.Schema({
     password:{
         type:String,
         required:true,
-        
+    },
+    profilePicture:{
+        type:String,
+        default:"https://pub-static.fotor.com/assets/projects/pages/d5bdd0513a0740a8a38752dbc32586d0/600w/fotor-03d1a91a0cec4542927f53c87e0599f6.jpg",
     }
 },{timestamps:true})
 

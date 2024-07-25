@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link,useNavigate} from 'react-router-dom';
 import {Label,TextInput,Button,Alert, Spinner} from 'flowbite-react';
+
 const SignUp = () => {
 const [formData,setFormData]=React.useState({})
 const [errorMessage,setErrorMessage]=React.useState(null);
